@@ -6,7 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src = "index.js" defer> </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>BeerKeeper</h1>
+        <nav>
+          <ul id="brewery-list">
+            <li> Brewery Names </li>
+            <li> Another Brewery </li>
+            <li> And Another </li>
+        </ul>
+        </nav>
+      </header>
+  
+      <main>
+        <div class="brewery-details">
+          <h2 id="brewery-name">Brewery Name Goes Here</h2>
+          <p>
+              <em id="brewery-location">Brewery Location goes here</em>
+          </p>
+         <p> 
+            <em id="brewery_favorites">Brewery Favorites</em>
+         </p>
+  
+          <form id="description-form">
+            <label for="description"> Brewery Favorites:</label>
+            <textarea id="description"></textarea>
+            <button type="submit">Update Favorites</button>
+          </form>
+  
+          <h3>Our Reviews</h3>
+          <ul id="review-list">
+            <li>We Love It</li>
+            <li>Cant wait to go back!</li>
+          </ul>
+          <form id="review-form">
+            <label for="review">Your Review:</label>
+            <textarea id="review"></textarea>
+            <button type="submit">Add review</button>
+          </form>
+        </div>
+      </main>
 </body>
 </html>
