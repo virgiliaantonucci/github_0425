@@ -12,41 +12,42 @@
     <header>
         <h1>BeerKeeper</h1>
         <nav>
-          <ul id="brewery-list">
-            <li> Brewery Names </li>
-            <li> Another Brewery </li>
+          <ul id="beer-list">
+            <li> Beer Names </li>
+            <li> Another Beer </li>
             <li> And Another </li>
-        </ul>
+         </ul>
         </nav>
       </header>
-  
-      <main>
-        <div class="brewery-details">
-          <h2 id="brewery-name">Brewery Name Goes Here</h2>
+
+    <!-- <main> -->
+        <section>
+        <div class="beer-details">
+          <h2 id="beer-name">Welcome</h2>
+          <img
+            id="beer-image"
+            alt="beer Name Goes Here"
+            src="assets/image-placeholder.jpg"
+          />
           <p>
-              <em id="brewery-location">Brewery Location goes here</em>
+              <em id="beer-price" >Price: $0.00</em>
           </p>
-         <p> 
-            <em id="brewery_favorites">Brewery Favorites</em>
-         </p>
-  
-          <form id="description-form">
-            <label for="description"> Brewery Favorites:</label>
-            <textarea id="description"></textarea>
-            <button type="submit">Update Favorites</button>
-          </form>
-  
-          <h3>Our Reviews</h3>
-          <ul id="review-list">
-            <li>We Love It</li>
-            <li>Cant wait to go back!</li>
-          </ul>
+          <section id="weekly-updates">
+            <div class="container">
+                <h4>Sign Up Today! New Beers Added Weekly</h4>
+                <form>
+                    <input type="email" name="email" placeholder="Enter Email...">
+                    <button type="submit" class="button_1">Subscribe</button>
+                </form>
+            </div>
+        </section>
           <form id="review-form">
-            <label for="review">Your Review:</label>
+            <label for="review">Please Share Your Review:</label>
             <textarea id="review"></textarea>
             <button type="submit">Add review</button>
           </form>
         </div>
-      </main>
-</body>
+    </section>
+      <!-- </main> -->
+  </body>
 </html>
