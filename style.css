@@ -13,14 +13,14 @@ body {
     height: 100vh;
   } */
   
-  /* header {
+   header {
     float: left;
     width: 225px;
     height: auto;
     border-radius: 0 0 6px 0;
     padding: 10px;
     margin-right: 10px;
-  } */
+  } 
   
   h1 {
     font-size: 52px;
@@ -63,7 +63,7 @@ body {
   }
   
   #beer-list li {
-    font-size: 2.5vh;
+    font-size: 2.1vh;
     margin-top: 4vh;
     padding-top: 4vh;
     background-color: rgb(240, 15, 15);
@@ -79,12 +79,12 @@ body {
     color: white;
   }
 
-  .beer-details h2 {
+   .beer-details h2 {
     font-size: 30px;
     margin: center;
     text-align: center;
     align-items: center;
-  }
+  } 
   
   .beer-details h4 {
     font-size: 18px;
@@ -123,7 +123,7 @@ body {
     cursor: pointer;
   }
 
-.beer-details {
-  position: absolute;
-    top: 50;
-    }
+#beer-list img{
+  margin: auto;
+}
+  

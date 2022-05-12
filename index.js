@@ -5,6 +5,7 @@ const beerImgine = document.getElementById('beer-image');
 const reviewForm = document.getElementById('review-form');
 const beerPrice = document.getElementById('beer-price');
 const weeklyUpdate = document.getElementById('weekly-updates');
+const beerRating = document.getElementById('beer-rating');
 
 
 fetch('https://api.sampleapis.com/beers/stouts')
@@ -12,7 +13,7 @@ fetch('https://api.sampleapis.com/beers/stouts')
      .then(beers => {
          renderBeers(beers);
          renderOneBeer(beers[21]);
-             console.log(beers);
+              console.log(beers);
      })
             // rendering beers in the beer-list column 
         function renderBeers(beers) {
@@ -26,23 +27,28 @@ fetch('https://api.sampleapis.com/beers/stouts')
                     beerName.innerText = beer.name;
                     beerImgine.src = beer.image;
                     beerPrice.innerText = beer.price;
+
+                    const li = document.getElementById('beer-rating')
+                    li.innerText = beer.reviews;
+                    beerRating.appendChild(li);
+                    
                 })
     })
         }
             //trying to get the a submit event to happen for the email subcription form
-        weeklyUpdate.addEventListener('submit', (e) =>  handleFormSubmit(e));
+        // weeklyUpdate.addEventListener('submit', (e) =>  handleFormSubmit(e));
 
-        function handleFormSubmit(e) {
-            e.preventDefault();
+        // function handleFormSubmit(e) {
+        //     e.preventDefault();
 
-            const li = document.createElement('li');   
-            li.innerText = weeklyUpdate.value;
+        //     const li = document.createElement('li');   
+        //     li.innerText = weeklyUpdate.value;
 
-             reviewList.appendChild(li);
+        //      reviewList.appendChild(li);
 
-            weeklyUpdate.reset();
+        //     weeklyUpdate.reset();
             
-        }
+       //}
             // just rendering one beer(img) when the page loads (the nitro can)
         function renderOneBeer(beer) {
             beerImgine.src = beer.image;
